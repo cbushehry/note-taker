@@ -11,7 +11,7 @@ DEPLOYMENT:
  * User can create multiple new notes and save them for later
  * User can delete notes when they no longer need them
 
- ![note taker homepage](assets/images/note-taker.PNG)
+ ![note taker homepage](assets/images/note-taker.jpg)
 
 ## 3. Tech Stack
  * HTML / CSS / JavaScript
