@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/cbushehry/note-taker#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "uuid-key-generator": "^0.3.3"
+    "express": "^4.17.1"
   }
 }

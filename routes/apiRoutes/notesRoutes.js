@@ -8,17 +8,9 @@ router.get('/notes', (req, res) => {
 
 });
 
-// *** Create a new note post fetch originated from client facing applicatoin
 router.post('/notes', (req, res) => {
-
-  // *** Placeholder ID creation to modify the body with one more element before "real" key is assigned.
-  req.body.id = notes.length.toString();
- 
-  // *** note will hold the reply of the new array of notes --> JSON.stringify({ notes: notesArray }, null, 2)
   const note = createNewNote(req.body, notes);
-  // *** respond with the json note for client facing application to complete the delete of the element from the front end.
   res.json(note);
-   
 });
 
 router.delete('/notes/:id', function (req, res) {
