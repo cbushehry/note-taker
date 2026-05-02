@@ -1,28 +1,41 @@
-# NOTE TAKER
+# Note Taker
 
-## 1. Description
-This application allows the user to create many new notes and save them using Express.js back end. The user can then go back at another time and retrieve the saved note from the JSON file.
+A full-stack note-taking app with an Express.js backend. Notes are persisted to a JSON file on the server and survive restarts.
 
-DEPLOYMENT:
- [DIRECT LINK](https://note-taker-cbushehry.herokuapp.com/) | [GITHUB REPOSITORY](https://github.com/cbushehry/note-taker)
+[GitHub Repository](https://github.com/cbushehry/note-taker)
 
-## 2. Features
- * Every note has a title and description
- * User can create multiple new notes and save them for later
- * User can delete notes when they no longer need them
+![note taker homepage](assets/images/note-taker.jpg)
 
- ![note taker homepage](assets/images/note-taker.jpg)
+## Features
 
-## 3. Tech Stack
- * HTML / CSS / JavaScript
- * NPM
- * Node.js
- * Express.js
- * Inquirer.js
- * uuid
- * Bootstrap / Google Fonts
+- Create notes with a title and body
+- Save notes for later retrieval
+- Delete notes you no longer need
 
-## 4. Credits / Contact
-This application was made by Cameron Bushehry
+## Tech Stack
 
-Contact Me: c.bushehry@gmail.com
+- Node.js / Express.js
+- HTML / CSS / JavaScript
+- Bootstrap 5 (Bootswatch Flatly theme)
+- Font Awesome 5
+
+## Getting Started
+
+```bash
+npm install
+npm start
+```
+
+Open `http://localhost:3001` in your browser.
+
+## API
+
+| Method | Route | Description |
+|--------|-------|-------------|
+| GET | `/api/notes` | Returns all saved notes |
+| POST | `/api/notes` | Creates and saves a new note |
+| DELETE | `/api/notes/:id` | Deletes a note by ID |
+
+## Contact
+
+Cameron Bushehry — c.bushehry@gmail.com
